@@ -1,23 +1,25 @@
 import 'package:flutter/material.dart';
-
-import 'home/home_screen.dart';
-import 'home/my_theme_data.dart';
-
+import 'package:news_app/home/home_screen.dart';
+import 'package:news_app/home/my_theme_data.dart';
+import 'package:provider/provider.dart';
+import '';
 void main(){
-  runApp(MyApp());
+  runApp(News_app());
+
 }
-class MyApp  extends StatelessWidget {
+
+class News_app extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      initialRoute: HomeScreen.routeName,
-      theme:MyThemeData.lightTheme,
+      debugShowCheckedModeBanner:false ,
+      theme: MyThemeData.lightTheme ,
+      initialRoute:HomeScreen.routeName,
       routes: {
-        HomeScreen.routeName:(context) => HomeScreen(),
+        HomeScreen.routeName:(context)=> HomeScreen()
       },
+
     );
   }
 }
-

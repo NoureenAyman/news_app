@@ -1,4 +1,7 @@
  import 'package:flutter/material.dart';
+import 'package:news_app/home/app_colors.dart';
+
+import 'app_colors.dart';
 
 class MyThemeData {
   static final ThemeData lightTheme = ThemeData(
@@ -13,7 +16,7 @@ class MyThemeData {
         )
       )
 
-    )
+    ),
       textTheme: TextTheme(
       titleLarge: TextStyle(
       fontSize: 22,
@@ -33,4 +36,5 @@ class MyThemeData {
   ),
   )
   );
+
 }
